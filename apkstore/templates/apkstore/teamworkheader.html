@@ -1,0 +1,24 @@
+<html>
+<head>
+  {% load static %}
+        <link href="{% static "css/teamworkstyle.css" %}" rel="stylesheet">
+<head>
+<body>
+<img src="{% static "img/android-apkstore_logo.png" %}" width="25%" height="12%">
+ <div class="navbar">
+        <a class="active" href="/teamworkhome">Home</a>
+       <!-- <a href="/addapkdetails">Add ApkDetails</a>
+	<a href="#">Add ApkSubdetails</a>
+	-->
+        <a href="/addcategory">Add Category </a>
+	<a href="/addsubcategory">Add SubCategory</a>
+	<a href="/softdata_upload">Soft Data Upload in bulk</a>
+        <a href="/softdata_upload_update">Update soft data in bulk</a>
+	<a href="/addcategory_bulk">Add Category bulk</a>
+	<a href="/addblog">Add Blog</a>
+	<a href="/addblog_bulk">Blog bulk Upload</a>
+        <a href="/logout_view">Logout</a>
+	<a href="#" style="float:right">Welcome : {{ user }}</a>
+ </div>
+</body>
+</html>

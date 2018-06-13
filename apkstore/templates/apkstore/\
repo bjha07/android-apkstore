@@ -1,0 +1,171 @@
+   
+<head>
+	<title>Main</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ {% load static %}
+ <link href="{% static "css/main.css" %}" rel="stylesheet">
+
+</head>
+
+    <!-- Left Side Bar-->
+
+
+					<div class="well wellpadding_category">
+						<div class="titleleft">Category</div><br>
+					</div>
+
+        <!-- Games-->
+
+					<div class="well wellpadding1">
+						<div>
+							<p class="menuleft1"><a href="#"><img src="icon.png" style="width: 25px; height: 25px;">Games</a></p>
+						</div>
+						<hr>
+
+						<div class="row category_list">
+
+							<div class="col-md-6 col_left1">
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Action</a></p>
+								</div>
+								
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Arcade</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Card</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Casual</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Music</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Racing</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Simulation</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Strategy</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Word</a></p>
+								</div>
+
+							</div>
+
+							<div class="col-md-6 col_left2">
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Adventure</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Board</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Casino</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Educational</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Puzzle</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Role Playing</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Sports</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Trivia</a></p>
+								</div>
+
+							</div>
+
+							
+						</div>
+
+					</div>
+
+
+		<!-- Apps-->			
+
+
+
+
+					<div class="well wellpadding2">
+						<!--div class="titleleft">Category</div><br-->
+						<div>
+							<p class="menuleft1"><a href="#"><img src="icon.png" style="width: 25px; height: 25px;">Apps</a></p>
+						</div>
+						<hr>
+
+						<div class="row category_list">
+
+							<div class="col-md-6 col_left1">
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Action</a></p>
+								</div>
+								
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Arcade</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Card</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Casual</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Music</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Racing</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Simulation</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Strategy</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Word</a></p>
+								</div>
+
+							</div>
+
+							<div class="col-md-6 col_left2">
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Adventure</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Board</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Casino</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Educational</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Puzzle</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Role Playing</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Sports</a></p>
+								</div>
+
+								<div><p class="menuleft2"><a href="#"><img src="icon.png" class="icon">Trivia</a></p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+

@@ -1,0 +1,273 @@
+
+{% load static %}					
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<div class="well" style="padding-bottom: 34px;">
+
+						<div class="row">
+
+        <!-- App Thumbnail & Download Button-->
+					{% for i in apkdetails %}
+
+                			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 thumb">
+						<img src={{i.img_url_1}}>
+                				<div>
+
+					 {%if i.apk_url %}
+                                <!--    <button type="button" class="btn btn-primary main_download_btn"><a href="http://android-apkstore.com.cp-in-7.webhostbox.net/Clash of Clans_v10.134.6_android-apkstore.com.apk" download></i><span style="color:white">Download App</span></a></button> -->
+                                <button type="button" class="btn btn-primary main_download_btn"><a href="{{i.apk_url}}" download></i><span style="color:white">Download Apk</span></a></button>
+
+                                                {%endif%}
+
+                				</div>
+                			</div>
+
+        <!-- App Title -->
+
+                			<div class="col-md-8 col-xs-8 main_title">
+						
+						 <h1> {{i.title_name}}</h1>
+                				<p>
+                					<a type="button" class="btn-floating btn-lg btn-fb smedia" href="#"><i class="fa fa-facebook"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-ins smedia" href="#"><i class="fa fa-instagram"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-yt smedia" href="#"><i class="fa fa-youtube"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-pin smedia" href="#"><i class="fa fa-pinterest"></i></a>
+
+                				</p><hr class="hr_cls">
+
+                				<p>Developer :&nbsp<a href="#">{{i.devloper}}</a></p><hr class="hrcls">
+
+</a></p><hr class="hr_cls">
+
+                				<p>Publish Date :&nbsp{{i.updated_on}}</p><hr class="hrcls">
+
+</a></p><hr class="hr_cls">
+
+                				<p>Latest Version :&nbsp{{i.current_version}}</p><hr class="hr_cls">
+						<br>
+
+                				<p>
+						{% include "apkstore/star_reting.html" %}
+
+                				</p>
+                			</div>
+
+                		</div><br><br>
+
+        <!-- Crouser-->        		
+
+                		<div class="row">
+					{% include "apkstore/apkslider.html" %}
+                		</div>
+
+        <!-- Description -->
+
+                        <div class="row description">
+
+                        	<h2>The description of {{i.title_name}}</h2>
+
+							<p>
+					
+								&nbsp;{{desc1 | safe }}
+								<br>
+							<!--
+
+								<div id="desc" class="collapse">
+
+							    </p>-->
+
+						<span id="text">
+								{{desc2 | safe }}
+                                                                {{desc3 | safe }}
+						</span>
+
+
+
+							    </div>
+						<span id="more" class="btn btn-info center-block" style="width:100px">Show more...</span>
+                                                <span id="less" class="btn btn-info center-block" style="width:100px">Show less...</span>
+
+							   <!-- <button type="button" class="btn btn-info center-block" data-toggle="collapse" data-target="#desc">Show More/Less</button>-->
+
+							</p>
+						</div>
+						<hr>
+
+        <!-- Blog Post-->
+
+						<div class="row blog_post">
+							<h4>Latest Blog Post</h4>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post and this title is gonna be right</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization. This is the description of this article.
+								</p>
+								<p><a href="/blog">Read More</a></p>
+
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization. This is the description of this article.
+								</p>
+								<p><a href="/blog">Read More</a></p>
+								
+							</div>
+							
+						</div><hr><br><br>
+						
+		<!-- Information Table-->				
+
+						<div>
+							<h4 style="text-align: center;">Description At A Glance</h4>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Updated</th>
+											<th>Size</th>
+											<th>Installs</th>
+										</tr>
+										<tr>
+											<td>November 22, 2016</td>
+											<td>{{i.size}}</td>
+											<td>10,000,000+</td>
+										</tr>
+										<br>
+										<tr>
+											<th>Current Version</th>
+											<th>Android Requirment</th>
+											<th>Content Rating</th>
+										</tr>
+										<tr>
+											<td>{{i.current_version}}</td>
+											<td>{{i.required_version}}</td>
+											<td>Rated For 3+</td>
+										</tr>
+										<tr>
+											<th>Interactive Elements</th>
+											<th>In-app Products</th>
+											<th>Permissions</th>
+										</tr>
+										<tr>
+											<td>Digital Purchases</td>
+											<td>₹ 150.00 - ₹ 7,600.00 per item</td>
+											<td>View details</td>
+										</tr>
+										<tr>
+											<th>Report</th>
+											<th>Offered By</th>
+											<th>Developer</th>
+										</tr>
+										<tr>
+											<td>Flag as inappropriate</td>
+											<td>AxesInMotion Casual</td>
+											<td>Visit website
+											    support@axesinmotion.com<br>
+												Privacy Policy<br>
+												Horizonte, Num 1, Planta<br>
+												2 41927 Mairena del<br>
+												Aljarafe Sevilla, ESPAÑA</td>
+											</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<hr>
+
+		<!-- Blog Post -->
+
+						<div class="row blog_post">
+							<h4>Latest Blog Post</h4>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post and this title is gonna be right</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization. This is the description of this article.
+								</p>
+								<p><a href="/blog">Read More</a></p>
+
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization. This is the description of this article.
+								</p>
+								<p><a href="/blog">Read More</a></p>
+								
+							</div>
+							
+						</div><hr><br><br>
+
+		<!-- Previous Version-->
+
+                    <!--
+						<div class="row">
+							<p>Previous Versions</p>
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-4 col-xs-4 well">
+								<a href="#">
+									<p>V111.111.111<br>Clash OF Clans<br>Size : 98MB<br>
+									</p>
+								</a>
+							</div>
+						</div>
+					-->	
+{%endfor%}
+					</div>
+
+
+<script>
+ $("#text").hide();
+ $("#less").hide();
+ $("#more").click( function() {
+   $("#text").show();
+   $("#less").show();
+   $("#more").hide();
+ });
+ $("#less").click( function() {
+   $("#text").hide();
+   $("#less").hide();
+   $("#more").show();
+ });
+</script>

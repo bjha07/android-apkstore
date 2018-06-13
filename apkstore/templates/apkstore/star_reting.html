@@ -1,0 +1,136 @@
+
+
+<head>
+<style>
+
+.checked{
+color:orange;
+}
+/* CSS used here will be applied after bootstrap.css */
+.half {
+    position:relative;
+}
+.font{
+        font-size:6em;
+}
+.half:after {
+    content:'';
+    position:absolute;
+    z-index:1;
+    background:white;
+    width: 50%;
+    height: 100%;
+    left: 47%;
+}
+
+.half_less:after {
+    content:'';
+    position:absolute;
+    z-index:1;
+    background:white;
+    width: 50%;
+    height: 100%;
+    left: 40%;
+}
+.half_more:after {
+    content:'';
+    position:absolute;
+    z-index:1;
+    background:white;
+    width: 45%;
+    height: 100%;
+    left: 70%;
+}
+
+</style>
+</head>
+							<div class="bs-glyphicons star">
+							 <span class="bs-glyphicons-list">
+                                        {% if ret_before == 1 and ret_after == "less_retting"%}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_less"></span>
+                                        {% elif ret_before == 1 and ret_after == "more_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_more"></span>
+                                        {% elif ret_before == 1 and ret_after == "avg" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half"></span>
+
+                                       {% elif ret_before == 2 and ret_after == "less_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_less"></span>
+                                        {% elif ret_before == 2 and ret_after == "more_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_more"></span>
+                                        {% elif ret_before == 2 and ret_after == "avg" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half"></span>
+
+                                       {% elif ret_before == 3 and ret_after == "less_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_less"></span>
+                                        {% elif ret_before == 3 and ret_after == "more_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_more"></span>
+                                        {% elif ret_before == 3 and ret_after == "avg" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half"></span>
+                                       {% elif ret_before == 4 and ret_after == "less_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_less"></span>
+                                        {% elif ret_before == 4 and ret_after == "more_retting" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half_more"></span>
+                                        {% elif ret_before == 4 and ret_after == "avg" %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked half"></span>
+
+                                        {% elif ret_before == 5 %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+
+                                        {% elif ret_before == 4 %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+
+                                        {% elif ret_before == 3 %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+
+                                        {% elif ret_before == 2 %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+
+                                        {% else %}
+                                        <span class="glyphicon glyphicon-star star-color checked"></span>
+
+                                        {% endif %}
+
+                                        </span>
+                                        </div>
+

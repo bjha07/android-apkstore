@@ -1,0 +1,111 @@
+
+
+		<!--Right SideBar -->
+
+					<div class="well wellpadding_rightbar">
+						<div class="right_title">Free Games Market</div><br>
+					</div>
+
+			<!-- First Column -->		
+
+					<div class="well wellpadding_rightbar">
+
+		        <!-- App 1-->				{% for i in apkdetails_apps_1 %}
+
+						<div class="row">
+							<a href="/androidapkstore?get_id={{i.app_url_show}}">
+							<div class="col-md-4 col-sm-4 thumbright">
+								
+								<img src={{i.img_url_1}}>
+								<button type="button" class="btn btn-primary right_download_btn">Download APK</button>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<p class="p1">{{i.title_name}}</p>
+								<p class="p2">{{i.devloper}}</p>
+								<p class="p3">{{i.updated_on}}</p><br>
+								<div class="star">
+
+								{% include "apkstore/star_reting.html" %}
+								</div>
+							</div>
+							</a>
+						</div>
+					{%endfor%}
+						<hr>
+					</div>
+				<!-- App 2 -->		
+
+				<!-- App 3 -->		
+
+						
+				<!-- App 4 -->		
+
+
+			<!-- Second Column -->		
+
+					<div class="well wellpadding_rightbar">
+
+		        <!-- App 1-->				
+						{% for i in apkdetails_apps_2 %}
+						<div class="row">
+							<a href="/androidapkstore?get_id={{i.app_url_show}}">
+							<div class="col-md-4 col-sm-4 thumbright">
+								<img src={{i.img_url_1}}>
+								<button type="button" class="btn btn-primary right_download_btn">Download APK</button>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<p class="p1">{{i.title_name}}</p>
+								<p class="p2">{{i.devloper}}</p>
+								<p class="p3">{{i.updated_on}}</p><br>
+								<div class="star">
+								{% include "apkstore/star_reting.html" %}
+								</div>
+							</div>
+							</a>
+						</div>
+						{% endfor %}
+						<hr>
+				</div>	
+				<!-- App 2 -->		
+
+						
+				<!-- App 3 -->		
+
+				<!-- App 4 -->		
+
+
+			<!-- Third Column -->		
+
+					<div class="well wellpadding_rightbar_bottom">
+
+		        <!-- App 1-->				
+						{% for i in apkdetails_apps_3 %}
+						<div class="row">
+							<a href="/androidapkstore?get_id={{i.app_url_show}}">
+							<div class="col-md-4 col-sm-4 thumbright">
+								<img src={{i.img_url_1}}>
+								<button type="button" class="btn btn-primary right_download_btn">Download APK</button>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<p class="p1">{{i.title_name}}</p>
+								<p class="p2">{{i.devloper}}</p>
+								<p class="p3">{{i.updated_on}}</p><br>
+								<div class="star">
+								{% include "apkstore/star_reting.html" %}
+								</div>
+							</div>
+							</a>
+						</div>
+					{%endfor%}
+						<hr>
+
+				<!-- App 2 -->		
+
+						
+				<!-- App 3 -->		
+
+						
+				<!-- App 4 -->		
+
+
+					</div>	

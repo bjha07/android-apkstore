@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ {% load static %}
+ <link href="{% static "css/main.css" %}" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="well row header">
+     {% include "apkstore/header_top.html" %}
+			</div>
+
+			<div class="row">
+				{% include "apkstore/header_main.html" %}
+			</div>
+
+
+			
+			<div class="row">
+
+    <!-- Left Side Bar-->
+
+				<div class="col-md-3 hidden-sm hidden-xs colmd3left">
+
+{% include "apkstore/left_side_bar.html" %}
+
+
+				</div>
+
+    <!-- Center Bar -->
+
+				
+				<div class="col-md-6 col-sm-8 col-xs-12 colmd6">
+					<div class="well">
+
+              		{% include "apkstore/center_bar.html" %}
+
+					</div>
+				</div>
+
+    <!-- Right Bar -->
+
+
+        <!-- Right Bar For Desktop-->
+
+				<div class="col-md-3 col-sm-4 hidden-xs colmd3right">
+{% include "apkstore/right_bar_desktop.html" %}
+
+				</div>
+
+		<!-- Right Bar For Mobile-->		
+                <div class="hidden-sm hidden-md hidden-lg">
+
+{% include "apkstore/right_bar_mobile.html" %}
+
+                </div>
+
+
+			</div>
+{% include "apkstore/footer.html" %}
+		</div>
+	</div>
+</body>
+</html>

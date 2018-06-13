@@ -1,0 +1,39 @@
+
+<head>
+	<title>ADP2</title>
+
+{% load static%}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static "adp2.css" %}">
+    
+</head>
+
+
+
+
+					<div class="well" style="padding-bottom: 34px;">
+
+        <!-- Blog Post 1st Block -->
+
+						<div class="row blog_post">
+							<h4>Latest Blog Post</h4>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+			
+							{% for i in get_article_id %}
+								<h4>{{i.title}}</h4><hr>
+								<img src={{i.image_link}} class="img-responsive center-block"><br><hr>
+								<p class="text-justify">
+									{{i.description_1 | safe}}
+									{{i.description_2 | safe}}
+								</p>
+							{% endfor %}
+							</div>
+							
+						</div>
+
+					</div>
+

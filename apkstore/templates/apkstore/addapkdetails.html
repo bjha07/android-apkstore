@@ -1,0 +1,232 @@
+<html>
+<head>
+     {% load static %}
+    <link href="{% static "css/teamworkpanelstyle.css" %}" rel="stylesheet">
+</head>
+<body>
+{% include "apkstore/teamworkheader.html" %}
+<center>
+<b>{{ msg }}</b>
+<h2>AddApkDetails</h2>
+    <div class="container">
+    <form action="#" method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+        <div class="row">
+        <div class="col-25">
+	<label for="fname">Title name : </label>
+	</div>
+	<div class="col-75">
+	<input type="text" id="fname" name="title_name" required=""><br>
+	</div>
+	</div>
+
+        <div class="row">
+        <div class="col-25">
+	<label>Title shortcode : </label>
+	</div>
+	<div class="col-75">
+	<input type="text" name="title_shortcode"><br>
+	</div>
+	</div>
+
+	<div class="row">
+        <div class="col-25">
+        <label>Developer : </label>
+        </div>
+        <div class="col-75">
+	<input type="text" name="developer"><br>
+	</div>
+	</div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Ratting : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="ratting"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Offers in app : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="offer_in_app"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Play store download link : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="play_st_down_link" ><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Apkpure download link : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="apk_down_link"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Apk version : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="apk_version"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Descriptoin 1 : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="desc1"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Description 2 : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" name="desc2"><br>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-25">
+        <label>Image: </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="main_image"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Image1 : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="image1"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Image2 : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="image2"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Image3 : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="image3"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Image4 : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="image4"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Image5 : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="image5"><br>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>App Upload : </label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="app_upload"><br>
+        </div>
+        </div>
+
+	<div class="row">
+        <div class="col-25">
+        <label>Number of install : </label>
+        </div>
+        <div class="col-75">
+	<input type="text" name="no_of_install" required=""><br>
+	</div>
+	</div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Required android version : </label>
+        </div>
+        <div class="col-75">
+	<input type="text" name="req_android_vsn" required=""><br>
+	</div>
+	</div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Status : </label>
+        </div>
+        <div class="col-75">
+	<input type="text" name="status"><br>
+	</div>
+	</div>
+	<br>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Category : </label>
+        </div>
+        <select name=category>
+        <option value="0">Select Category</option>
+        {% for a in category %}
+            <option value="{{a.id}}">{{a.name}}</option>
+	{% endfor %}
+         </select>
+        </div>
+
+        <div class="row">
+        <div class="col-25">
+        <label>Sub Category : </label>
+        </div>
+        <select name=subcategory>
+        <option value="0">Select SubCategory</option>
+        {% for a in subcategory %}
+            <option value="{{a.id}}">{{a.name}}</option>
+	{% endfor %}
+         </select>
+        </div>
+
+	<div class="row">
+        <div class="col-75">
+	<input type="submit" value="Save">
+	<input type="reset" value="Reset">
+        </div>
+        </div>
+    </form>
+    </div>
+<br>
+{{ msg }}
+<br>
+</center>
+</body>
+</html>

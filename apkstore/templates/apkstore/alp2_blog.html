@@ -1,0 +1,38 @@
+
+
+<head>
+        <title>ADP1</title>
+{% load static %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static "css/alp2.css" %}" rel="stylesheet">
+</head>
+
+
+
+					<div class="well" style="padding-bottom: 34px;">
+
+        <!-- Blog Post 1st Block -->
+
+						<div class="row blog_post">
+							<h4>Latest Blog Post</h4>
+							{% for i in article %}
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h5 class="post_title">{{i.title}}</h5>
+								<img src="{{i.image_link}}" class="img-responsive">
+								<p class="text-justify post_description">
+								{{i.desc_blog | safe}}
+								</p>
+								<p class="text-right read_more"><a href="/blog?get_id={{i.blog_url}}">Read More</a></p>
+ 
+							</div>
+								{% endfor %}`
+
+							</div>
+							
+						</div>
+                              <br class="hidden-md"><br class="hidden-md"><br class="hidden-md">

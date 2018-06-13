@@ -1,0 +1,50 @@
+
+					<div class="well wellpadding_leftbar">
+						<div class="left_title">Free Games Market</div><br>
+					</div>
+
+        <!-- Games-->
+
+                          <!-- left side bar category wise appp -->
+					<!-- Third Column -->		
+
+					<div class="well wellpadding_rightbar_bottom">
+
+		        <!-- App 1-->		
+
+						{% for i in apkdetails_games %}
+		
+
+						<div class="row">
+							<a href="/androidapkstore?get_id={{i.app_url_show}}">
+							<div class="col-md-4 col-sm-4 thumbright">
+								<img src={{i.img_url_1}}>
+								<button type="button" class="btn btn-primary right_download_btn">Download APK</button>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<p class="p1">{{i.title_name}}</p>
+								<p class="p2">{{i.devloper}}</p>
+								<p class="p3">{{i.updated_on}}</p><br>
+								<div class="star">
+								 {% include "apkstore/star_reting.html" %}
+								</div>
+							</div>
+							</a>
+						</div>
+						<hr>
+
+				<!-- App 2 -->		
+
+						
+				<!-- App 3 -->		
+
+						
+				<!-- App 4 -->		
+
+
+				<!-- App 5-->		
+
+
+						{% endfor %}
+
+					</div>

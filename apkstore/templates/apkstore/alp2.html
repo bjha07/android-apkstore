@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Android - APK Store | Download Latest and Updated Android Apps APK Directly from our Market | Know What is Latest in Android, News & Articles</title>
+{% load static %}
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static "css/alp2.css" %}" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+
+{% include "apkstore/header.html" %}
+		
+			<div class="row">
+
+    <!-- Left Side Bar-->
+
+				<div class="col-md-3 hidden-sm hidden-xs colmd3left">
+
+
+{% include "apkstore/left_side_bar.html" %}
+
+
+				</div>
+
+    <!-- Center Bar -->
+
+				
+				<div class="col-md-6 col-sm-8 col-xs-12 colmd6">
+
+{% include "apkstore/alp2_blog.html" %}
+
+				</div>
+
+    <!-- Right Bar -->
+
+
+        <!-- Right Bar For Desktop-->
+{% comment %}
+
+				<div class="col-md-3 col-sm-4 hidden-xs colmd3right">
+
+{% include "apkstore/right_bar_for_desktop.html" %}	
+
+
+				</div>
+
+		<!-- Right Bar For Mobile-->	
+                <div class="hidden-sm hidden-md hidden-lg">
+
+{% include "apkstore/right_bar_for_mobile.html" %}
+
+                </div>
+{% endcomment %}
+               </div> 
+			</div>
+
+	<!-- Footer -->		
+
+			<div class="well wellfooter">			
+{% include "apkstore/footer.html" %} 
+
+			</div>
+
+		</div>
+	</div>
+        <script type="text/javascript" src="{% static "js/adp1.js" %}"></script>
+
+</body>
+</html>

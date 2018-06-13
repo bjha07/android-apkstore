@@ -1,0 +1,32 @@
+<html>
+<head>
+     {% load static %}
+    <link href="{% static "css/teamworkpanelstyle.css" %}" rel="stylesheet">
+</head>
+<body>
+{% include "apkstore/teamworkheader.html" %}
+<center>
+<h2>Add Category</h2>
+
+<center>
+<b> {{ msg }} </b>
+<h2>Category Bulk Upload</h2>
+    <div class="container">
+
+<form action="/addcategory_bulk/" method="post" id="user_form" enctype="multipart/form-data">
+{%csrf_token%}
+<p><b>PLEASE CAREFULLY CHECK THE FILE BEFORE UPDATING!! </b>
+<p>upload file</p>
+<br>
+UPLOAD: <input type="file" name="upload_file" id="id_batch_pdf"><br>
+<br>
+<br>
+  <input type="submit" class="btn btn-success"  value="Update" onclick="return confirm('Are you sure you want to proceed??');"/>
+</form>
+
+    </div>
+
+<br>
+</center>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<head>
+	<title>Main</title>
+ {% load static %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static "css/main.css" %}" rel="stylesheet">
+</head>
+
+
+						<div class="row">
+
+        <!-- App Thumbnail & Download Button-->
+
+				{% for i in whatsapp_obj %}
+
+                			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 thumb">
+						<img src={{i.img_url_1}}>
+						<!--<img src="{% static "img/candycrush.jpg" %}">-->
+                				<div>
+						{%if i.apk_url %}
+				<!--	<button type="button" class="btn btn-primary main_download_btn"><a href="http://android-apkstore.com.cp-in-7.webhostbox.net/Clash of Clans_v10.134.6_android-apkstore.com.apk" download></i><span style="color:white">Download App</span></a></button> -->
+				<button type="button" class="btn btn-primary main_download_btn"><a href="{{i.apk_url}}" download></i><span style="color:white">Download App</span></a></button>
+			
+						{%endif%}
+                				<!--	<button type="button" class="btn btn-primary main_download_btn">Download Now</button>-->
+                				</div>
+                			</div>
+
+        <!-- App Title -->
+
+                			<div class="col-md-8 col-xs-8 title1 ">
+                				<h1> {{i.title_name}}</h1>
+
+                				<p>
+                					<a type="button" class="btn-floating btn-lg btn-fb smedia" href="#"><i class="fa fa-facebook"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-ins smedia"><i class="fa fa-instagram"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-yt smedia"><i class="fa fa-youtube"></i></a>
+                					<a type="button" class="btn-floating btn-lg btn-pin smedia"><i class="fa fa-pinterest"></i></a>
+
+                				</p><hr class="hrcls">
+
+                				<p>Author :&nbsp<a href="#">{{i.developer}}</a></p><hr class="hrcls">
+
+                				<p>Publish Date :&nbsp<a href="#">{{i.added_on}}</a></p><hr class="hrcls">
+
+                				<p>Latest Version :&nbsp<a href="">1.0.0</a></p><hr class="hrcls">
+
+						<!-- Star Reting -->
+					
+						{% include "apkstore/star_reting.html" %}
+
+				<!-- Star Reting -->
+
+
+
+                			<!--	<p>
+                				    <span class="fa fa-star checked"></span>
+                				    <span class="fa fa-star checked"></span>
+                				    <span class="fa fa-star checked"></span>
+                				    <span class="fa fa-star"></span>
+                				    <span class="fa fa-star"></span>
+                				</p>
+					-->
+                			</div>
+
+                		</div><br><br>
+
+        <!-- Crouser-->        		
+
+                		<div class="row">
+				{% include "apkstore/apkslider.html" %}
+
+                		</div>
+
+        <!-- Description -->
+
+                        <div class="row">
+
+                        	<h2 style="font-size: 25px; text-align: center;">The description of Digital World</h2>
+
+							<p>
+								The fullest and coolest digimons gather here, hurry to collect the stronger and popular digimons;
+								You can challenge Arena, Guild battle, Cross Server Battle in our game;
+								Welfare of login, battle, level up and achievement are waiting for you!<br>
+								<br>
+
+
+								<div id="desc" class="collapse">
+
+
+								---Super Welfare---
+								*Great reward for 7 Days, Get digimon for free*
+								Ten times recharge rebate and first recharge send you super digimon.<br>
+								<br><br>
+								---Game Feature---<br>
+								【Appearance Design】<br>
+								Professional painter elaborately done in design, hundreds of gorgeous and elaborate image are vividly shown on the screen!<br>
+								<br><br>
+								【Skills and Gameplay】<br>
+								<br><br>
+								Rigorous set of digimons and totally restore of relationship make team up combo powerful and amazing. You are the one to master these strongest digimon rangers! Are you ready to make the strongest team?
+								<br><br>
+								【Original animation】<br>
+								Fantastic story together with popular original songs brings you purest experience of secondary element! 
+								<br><br>
+								【Complete Collection】<br>
+								Every iconic character you encountered in your childhood gathers here. Partners in growth stage, mature stage and so on absolutely meet your needs of image quality.
+								<br><br>
+								【Abundant Training】<br>
+								You can develop super digimons in several ways like equipment, spirit, divine weapon, talent and constellation. Limiting strategy lead you to dominate the world.
+								<br><br>
+								【Exciting Challenges】<br>
+								Events of Arena, instance, trial, tamers, guild battle and Challenger Tournament would be released in turns. Here are PVP, PVE instances to enrich rewards and equip your rangers!
+								<br><br>
+								==Contact Us==
+								<br><br>
+								Facebook Fanpage：fb.com/fanspmpage/<br>
+								Facebook Group: fb.com/groups/agumon.en/<br>
+								E-mail: windwinggt@gmail.com<br>
+								Discord: https://discord.gg/xGuWAhN<br>
+								<hr>
+								<h2>Whats New</h2>
+								<p>2018-03-29</p><br>
+								<p>- Now compatible with more devices.<br>
+								- Now supports the following languages: German, Russian, French, Spanish, Portuguese, Turkish, Traditional Chinese, Thai and Bahasa Indonesia<br>
+								- Facebook users can now change their in-game icons<br>
+								- Various bug fixes<br>
+							    </p>
+
+
+
+							    </div>
+
+							    <button type="button" class="btn btn-info center-block" data-toggle="collapse" data-target="#desc" style="float: center;">Show More/ Less</button>
+
+							</p>
+						</div>
+						<hr>
+
+
+        <!-- Blog Post-->
+
+						<div class="row">
+							<h4 style="text-align: center;">Latest Blog Post</h4>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+		
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization.
+								</p>
+								<p class="text-right read_more"><a href="#">Read More</a></p>
+
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+			
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization.
+								</p>
+								<p class="text-right read_more"><a href="#">Read More</a></p>
+								
+							</div>
+							
+						</div><hr><br><br>
+						
+
+
+
+		<!-- Information Table-->				
+
+						<div>
+							<h4 style="text-align: center;">Description At A Glance</h4>
+							<div class="table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Updated</th>
+											<th>Size</th>
+											<th>Installs</th>
+										</tr>
+										<tr>
+											<td>November 22, 2016</td>
+											<td>38M</td>
+											<td>10,000,000+</td>
+										</tr>
+										<br>
+										<tr>
+											<th>Current Version</th>
+											<th>Android Requirment</th>
+											<th>Content Rating</th>
+										</tr>
+										<tr>
+											<td>1.0.7</td>
+											<td>4.1 and Above</td>
+											<td>Rated For 3+</td>
+										</tr>
+										<tr>
+											<th>Interactive Elements</th>
+											<th>In-app Products</th>
+											<th>Permissions</th>
+										</tr>
+										<tr>
+											<td>Digital Purchases</td>
+											<td>₹ 150.00 - ₹ 7,600.00 per item</td>
+											<td>View details</td>
+										</tr>
+										<tr>
+											<th>Report</th>
+											<th>Offered By</th>
+											<th>Developer</th>
+										</tr>
+										<tr>
+											<td>Flag as inappropriate</td>
+											<td>AxesInMotion Casual</td>
+											<td>Visit website
+											    support@axesinmotion.com<br>
+												Privacy Policy<br>
+												Horizonte, Num 1, Planta<br>
+												2 41927 Mairena del<br>
+												Aljarafe Sevilla, ESPAÑA</td>
+											</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<hr> 
+
+
+
+						<div class="row">
+							<h4 style="text-align: center;">Latest Apps</h4>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization.
+								</p>
+								<p class="text-right read_more"><a href="#">Read More</a></p>
+
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<h5 class="post_title">Title of 1st Article so we see this is title and this is title so this is title of blog post</h5>
+								<img src="{% static "img/blog.jpg" %}" class="img-responsive">
+								<p class="text-justify post_description">
+									This is the description of blog post. This is an important part because it wwill increase our genuine content hence we need this block and its is very necessary. So i have to make this block and oits would be quite useful for search engine optimization.
+								</p>
+								<p class="text-right read_more"><a href="#">Read More</a></p>
+							
+						{%endfor%}	
+							</div>
+							
+						</div><hr><br><br>                 		
+

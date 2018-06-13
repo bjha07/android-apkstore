@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+a{
+text-decoration:none;
+}
+</style>
+
+    {% load static %}
+   <link href="{% static "css/style.css" %}" rel="stylesheet">
+</head>
+<body>
+<h1>Android-apkstore.com</h1>
+<br>
+<center>
+{% for i in version_obj %}
+<p><b>{{i.title_name}}</b></p>
+{%if i.image %}
+<p><img src={{i.image.url}} width="10%" height="20%"></p>
+{% endif %}
+{% if image1 %}
+<img src={{i.image1.url}} width="20%" height="40%">
+{% endif %}
+{%if i.image2 %}
+<img src={{i.image2.url}} width="20%" height="40%">
+{%endif%}
+{%if i.image3 %}
+<img src={{i.image3.url}} width="20%" height="40%">
+{%endif%}
+{%if i.image4 %}
+<img src={{i.image4.url}} width="20%" height="40%">
+{%endif%}
+{%if i.image5 %}
+<img src={{i.image5.url}} width="20%" height="40%">
+{%endif%}
+<br>
+<br>
+{%if i.app_upload_file %}
+<a href="/media/{{i.app_upload_file}}"></i><span>Download App</span></a>
+{%endif%}
+<br>  
+<br>
+<b>Descripton</b><p>{{i.description_1}}</p>
+<br>
+<p>{{i.description_2}}</p>
+
+    
+<br>
+<br>
+<b>Devloper :</b> 
+<p>{{i.devloer}}</p>
+<br>
+<b>Version : </b>
+<p>{{i.apk_version}}</p>
+{%endfor%}
+<br>
+<br>
+</body>
+
+</html>
+

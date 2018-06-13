@@ -1,0 +1,60 @@
+<html>
+<head>
+     {% load static %}
+    <link href="{% static "css/teamworkpanelstyle.css" %}" rel="stylesheet">
+</head>
+<body>
+{% include "apkstore/teamworkheader.html" %}
+<center>
+<h2>Add Category</h2>
+    <div class="container">
+    <form action="#" method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+        <div class="row">
+        <div class="col-25">
+	<label for="fname"> Name : </label>
+	</div>
+	<div class="col-75">
+	<input type="text" id="fname" name="name" required=""><br>
+	</div>
+	</div>
+	<div class="row">
+        <div class="col-25">
+        <label for="fname"> Category_Id: </label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="category_id" required=""><br>
+        </div>
+	</div>
+	<div class="row">
+        <div class="col-25">
+        <label for="fname"> Category Our Name : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="category_our_name" required=""><br>
+        </div>
+	</div>
+	<div class="row">
+        <div class="col-25">
+        <label for="fname">Meta : </label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="meta" required=""><br>
+        </div>
+
+	</div>
+
+	<div class="row">
+        <div class="col-75">
+	<input type="submit" value="Save">
+	<input type="reset" value="Reset">
+        </div>
+        </div>
+    </form>
+    </div>
+<br>
+<b>{{ msg }}</b>
+<br>
+</center>
+</body>
+</html>

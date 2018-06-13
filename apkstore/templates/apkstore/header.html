@@ -1,0 +1,67 @@
+{% load static %}
+
+		<!-- Header -->
+			<div class="well row header">
+				<div class="col-md-4 col-sm-4 col-xs-12 center-block">
+					<img src="{% static "img/logo_new.jpg" %}" width="100%" class="center-block">
+				</div>
+				<div class="col-md-8 col-sm-8 hidden-xs center-block">
+					<img src="{% static "img/adbanner.jpg"%}" class="adbanner" width="100%">
+				</div>
+			</div>
+
+		<!-- NavBar -->
+
+			<div class="row">
+			
+                                <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+					<div class="visible-xs" style="margin-top: 5px; margin-left: 5px;">
+						<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+						<script type="text/javascript">
+							function openNav()
+							{
+								document.getElementById("myNav").style.width = "50%";
+							}
+
+							function closeNav()
+							{
+								document.getElementById("myNav").style.width = "0%";
+							}
+						</script>
+						<script type="text/javascript">
+							if ($(window).width() > 768) {
+
+								$('nav').removeAttr('data-spy');
+								}
+							else {
+								$('nav').attr('data-spy','affix');
+								}	
+						</script>
+					</div>
+
+
+					<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn visible-xs" onclick="closeNav()">&times;</a>
+						<ul class="nav navbar-nav overlay-content">
+							<li><a href="/main_page">Home</a></li>
+							<li><a href="/alp_new_apps">Free Apps Market</a></li>
+							<li><a href="/alp_new_games">Free Games Market</a></li>
+							<li><a href="/alp2_blog">Latest In Android</a></li>
+							<li>
+								<form class="navbar-form navbar-left search-box" action="/search_apps">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search" name="search">
+										<div class="input-group-btn">
+											<button class="btn btn-default" type="submit">
+												<i class="glyphicon glyphicon-search"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</li>
+
+						</ul>
+					</div>
+
+				</nav>
+			</div>
