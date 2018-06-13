@@ -1,0 +1,379 @@
+@font-face {
+   font-family: "Myrapidpro-regular";
+   src: url("fonts/myriadpro-regular.eot");
+   src: url('fonts/myriadpro-regular.woff') format('woff'),
+       url('fonts/myriadpro-regular.ttf') format('truetype'),
+       url('fonts/myriadpro-regular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+body{
+    font-family: "Myrapidpro-regular"; 
+}
+
+
+.container{
+	background-color: lightgrey;
+}
+
+.well{
+	background-color: #fff;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.50);
+}
+
+.header{
+	margin-top: 10px;
+
+}
+
+.logo{
+	width: auto;
+}
+
+.adbanner{
+	width: 100%;
+}
+.search-box{
+    padding-left: 40rem;
+}
+
+/*  Left Bar CSS Starts Here*/
+
+.colmd3left{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.wellpadding_leftbar{
+    padding: 15px 15px;
+    margin-bottom: 2px;
+}
+
+
+.left_title {
+    border-bottom: 1px solid #e8e8e8;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: 400;
+    position: relative;
+    background: #289DCC;
+}
+
+.leftmenu_title {
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-weight: 550;
+}
+
+.category_list{
+    margin-left: 30px;
+
+}
+
+
+.leftmenu_items {
+    white-space: nowrap;    
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-left: -55px;
+    margin-right: 2px;
+}
+
+
+.post_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+@-moz-document url-prefix(){
+    .post_title{
+    white-space: wrap;
+    height: 4rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    }
+}
+
+.post_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+@-moz-document url-prefix(){
+    .post_description{
+    white-space: wrap;
+    height: 10rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    }
+}
+
+/*  Left Bar CSS Ends Here*/
+
+hr {
+	border-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+
+/* Right Bar CSS Starts Here*/
+
+.colright{
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+
+/* App Card Block Starts Here */
+
+.card_md{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.card {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card_img{
+    width: 91%;
+    height: auto;
+    padding: 5px 5px;
+    margin-left: 6px;
+}
+.card_description{
+    padding: 0px 5px;
+}
+
+.card_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    margin: 1px 0px;
+    min-height: 33px;
+}
+
+@-moz-document url-prefix(){
+    .card_title{
+        text-align: center;
+        font-size: 15px;
+        margin: 1px 0px;
+        height: 3.8rem;
+        line-height: 1.9rem;
+    }
+}
+
+.star{
+    text-align: center;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_btn{
+    margin-top: -10px;
+    margin-bottom: -5px;
+    width: 94%;
+}
+
+.wellpadding{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.wellpadding3{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: -15px;
+}
+
+
+
+.right_download_btn{ 
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.thumbright img{
+	width: 90px;
+	height: 90px;
+	margin-left: 0px;
+}
+
+/* Footer CSS*/
+.wellfooter{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .tab_padding{
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+
+    .colright {
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 1px;
+    }
+    .wellpadding_tab{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 4px;
+    }
+	
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 1025px)
+{
+     .left_title{
+        margin-bottom: -19px;
+        color: white;
+     }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+
+       .left_title{
+        margin-bottom: -19px;
+        color: white;
+     }
+          .right_title{
+        margin-bottom: -19px;
+        color: white;
+     }
+   .logo{
+   	width: 100%;
+   }
+
+   .banner{
+   	width: 100%;
+   	margin-left: 30px;
+    margin-top: 25px;
+   }
+   .spacing{
+    
+   }
+
+}
+
+@media screen and (max-width: 550px){
+	.card_img{
+    width: 94%;
+    height: auto;
+    padding: 0px 1px;
+    margin: 0px 3px;
+    }
+
+    .card_description{
+    padding: 0px 0px;
+    }
+
+    .card_title{
+    font-size: 15px;
+    margin: 5px 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
+
+    .xs{
+        padding: 0px 4px;
+    }
+
+    .star{
+    text-align: center;
+    margin-top: -10px;
+    width: 100%;
+    }
+
+    .colright{
+    padding-left: 2px;
+    padding-right: 2px;
+    }
+    
+}
+
+@media screen and (min-width: 425px){
+    .logo {
+    margin-left: 22px;
+}
+.text-right {
+    text-align: center;
+}
+  .icon_link{
+        text-align: center;
+  }
+}
+
+@media screen and (min-width: 375px){
+    .text-right {
+    text-align: center;
+   }
+    .icon_link{
+        text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+	.thumb img{
+    	width: 100px;
+    	height: 100px;
+    	margin: 15px 3px;
+	}
+	.main_download_btn{
+    	margin-left: 3px;
+    	margin-top: 40px;
+    	font-size: 11px;
+
+    }
+   .logo {
+    margin-left: -26px;
+}
+.text-right {
+    text-align: center;
+  }
+   .icon_link{
+        text-align: center;
+  }
+}

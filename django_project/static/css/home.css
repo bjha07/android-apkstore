@@ -1,0 +1,419 @@
+.container{
+	background-color: lightgrey;
+}
+
+.well{
+	background-color: #fff;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.50);
+}
+
+.header{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.logo{
+	width: auto;
+}
+
+.adbanner{
+	width: 100%;
+}
+/*NavBar For Mobile*/
+.search-box{
+    padding-left: 40rem;
+}
+
+hr {
+	border-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+
+/* Left Bar CSS Starts Here*/
+
+.colmain{
+    padding-left: 5px;
+    padding-right: 0px;
+    margin-top: -10px;
+}
+
+.wellpadding_main_slider{
+    padding: 5px 0px ;
+    margin-bottom: 5px;
+}
+.wellpadding_main{
+    margin-bottom: 5px;
+}
+
+
+/* App Card Block Starts Here */
+
+.card_md{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.card {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card_img{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+}
+.card_description{
+    padding: 0px 5px;
+}
+
+.card_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 10px;
+    font-size: 15px;
+    margin: -16px 0px 12px 0px;
+    min-height: 33px;
+}
+
+@-moz-document url-prefix(){
+    .card_title{
+        text-align: center;
+        font-size: 15px;
+        margin: 1px 0px;
+        height: 3.8rem;
+        line-height: 1.9rem;
+    }
+}
+
+.star{
+    margin-left: 6px;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_btn{
+    margin-top: -10px;
+    margin-bottom: -5px;
+    width: 94%;
+}
+
+.wellpadding{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.wellpadding3{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: -15px;
+}
+
+
+
+.right_download_btn{ 
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.thumbright img{
+	width: 90px;
+	height: 90px;
+	margin-left: 0px;
+}
+
+/*  Right Bar CSS Starts Here*/
+
+.colmd3right{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: -10px;
+}
+
+.wellpadding_rightbar{
+    padding: 15px 15px;
+    margin-bottom: 2px;
+}
+
+
+.right_title {
+    border-bottom: 1px solid #e8e8e8;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: 400;
+    position: relative;
+    background: #A4c639;
+}
+
+.rightmenu_title {
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-weight: 550;
+}
+
+.category_list{
+    margin-left: 30px;
+
+}
+
+
+.rightmenu_items {
+    white-space: nowrap;    
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-left: -55px;
+    margin-right: 2px;
+}
+
+
+.post_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+@-moz-document url-prefix(){
+    .post_title{
+    white-space: wrap;
+    height: 4rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    }
+}
+
+.post_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+@-moz-document url-prefix(){
+    .post_description{
+    white-space: wrap;
+    height: 10rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    }
+}
+
+
+/* Footer CSS*/
+.wellfooter{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .tab_padding{
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+
+    .colright {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .wellpadding_tab{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 4px;
+    }
+	
+}
+
+@media screen and (min-width: 1024px){
+}
+
+@media screen and (max-width: 1024){
+
+
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+   .logo{
+   	width: 100%;
+   }
+
+   .banner{
+   	width: 100%;
+   	margin-left: 30px;
+    margin-top: 25px;
+   }
+
+}
+
+@media screen and (max-width: 760px){
+    .container-fluid{
+    padding-left: 2px;
+    padding-right: 0px;
+    }
+    .colmain{
+        padding-left: 1px;
+        padding-right: 1px;
+    } 
+    
+    /* NavBar For Mobile */
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.2s;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .overlay-content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 50px;
+    }
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+    }
+    .search-box{
+	padding-left: 3.5rem;
+	padding-right:0.5rem;
+    }	
+
+    .test .row1{
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .test > .row1 > .col-xs-4 {
+        display: inline-block;
+        float: none;
+    }
+
+	.card_img{
+    width: 94%;
+    height: auto;
+    padding: 0px 1px;
+    margin: 0px 3px;
+    }
+
+    .card_description{
+    padding: 0px 0px;
+    }
+
+    .card_title{
+    font-size: 15px;
+    margin: 5px 0px;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
+
+    .card_xs{
+        padding: 0px 5px;
+        margin: 0px -5px;
+    }
+
+    .star{
+    margin-left: 12px;
+    margin-top: -10px;
+    width: 100%;
+    }
+
+    .colright{
+    padding-left: 2px;
+    padding-right: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+	.thumb img{
+    	width: 100px;
+    	height: 100px;
+    	margin: 15px 3px;
+	}
+	.main_download_btn{
+    	margin-left: 3px;
+    	margin-top: 40px;
+    	font-size: 11px;
+
+    }
+
+}
+
+
+/* Test */
+/*#b {
+    display: none;
+}
+
+#content:hover~#b{
+    display: block;
+}*/
+
+#a {
+  display: block;
+}
+
+#a:hover + #b {
+  display:block;
+}
+
+#b {
+  display:none;
+  }

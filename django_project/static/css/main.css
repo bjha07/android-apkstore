@@ -1,0 +1,462 @@
+.container{
+	background-color: lightgrey;
+}
+
+.well{
+	background-color: #fff;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.50);
+}
+
+.header{
+	margin-top: 10px;
+
+}
+
+.logo{
+	width: auto;
+}
+
+.adbanner{
+	width: 100%;
+}
+
+.navbar-default{
+    background-color: #999999;
+
+}
+
+.titleleft {
+    border-bottom: 1px solid #e8e8e8;
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: 400;
+    position: relative;
+    background: #24cd77
+}
+
+.menuleft1 {
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-weight: 550;
+}
+
+.category_list{
+    margin-left: 30px;
+
+}
+
+
+.menuleft2 p{
+    color: #fff;
+    border: 2px solid;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-left: -40px;
+    margin-right: 2px;
+}
+
+
+
+hr {
+	border-width: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+.thumb img{
+	width: 150px;
+	height: 150px;
+	margin: 25px 10px; 
+}
+
+.title1{
+
+    padding-left: 70px;
+
+}
+
+.smedia{
+    margin-left: -20px;
+}
+
+.hrcls{
+    margin: 2px 0px;
+}
+
+.main_download_btn{
+	font-size: 19px;
+	margin-left: 10px;
+	
+}
+
+
+
+.describe_img{
+	direction: ltr;
+}
+
+#slide_box {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+#slide_box .det-pic-out {
+    overflow: hidden;
+    overflow-x: scroll;
+    position: relative;
+    width: 100%;
+    height: 250px;
+} 
+
+#slide_box ul {
+    position: absolute;
+    list-style: none;
+    padding-left: 5px;
+}
+
+#slide_box li {
+    white-space: nowrap;
+}
+
+/*#slide_box img {
+    vertical-align: middle;
+}*/
+
+.post_title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 550;
+}
+
+.post_description{
+    line-height: 1.5rem;
+    font-size: 12px;
+}
+
+.read_more{
+    margin-top: -10px;
+}
+
+
+
+.p1{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 2.5em;
+    height: 4em; 
+    width: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
+   font-size: 20px;
+
+}
+
+.p2{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 2.5em;
+    height: 4em; 
+    width: 150px;
+    margin-top: -45px;
+    margin-left: 0px;
+   font-size: 12px;
+
+}
+
+.p3{
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.5em;
+    height: 5em; 
+    width: 170px;
+    margin-top: -30px;
+    margin-left: 0px;
+   font-size: 10px;
+
+}
+
+.star{
+	margin-top: -30px;
+	margin-left: 20px;
+}
+
+.wellpadding{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.wellpadding1{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.wellpadding_category{
+    padding-bottom: 0px;
+    margin-bottom: -2px;
+}
+.wellpadding2{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: -15px;
+}
+
+.wellpadding3{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: -15px;
+}
+
+
+
+.right_download_btn{ 
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.thumbright img{
+	width: 90px;
+	height: 90px;
+	margin-left: 0px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1430px){
+	.p1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.5em;
+    height: 4em;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+
+	.p2{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 2.5em;
+		height: 4em; 
+		width: 100px;
+		margin-top: -45px;
+		margin-left: 20px;
+		font-size: 12px;
+	}
+
+	.p3{
+		white-space: wrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 1.5em;
+		height: 5em; 
+		width: 100px;
+		margin-top: -30px;
+		margin-left: 20px;
+		font-size: 10px;
+	}
+
+}
+
+@media screen and (min-width: 1024px){
+	.colmd3left{
+		padding-right: 5px;
+	}
+
+	.colmd6{
+		padding-right: 5px;
+		padding-left: 5px;
+
+	}
+
+	.colmd3right{
+		padding-left: 5px;
+	}
+
+	.main_download_btn{
+		font-size: 19px;
+		margin-left: 0px;
+	}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024){
+
+
+}
+
+
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+	.colmd6{
+		padding-right: 5px;
+		padding-left: 5px;
+
+	}
+
+	.thumb img{
+    	margin: 20px 3px;
+	}
+
+	.colmd3right{
+		padding-left: 5px;
+	}
+
+	.thumbright img{
+		width: 80px;
+		height: 80px;
+		margin-left: 0px;
+	}
+
+	.p1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2.5em;
+    height: 4em;
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 20px;
+    }
+
+    .p2{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 2.5em;
+    height: 4em; 
+    width: 120px;
+    margin-top: -45px;
+    margin-left: 0px;
+   font-size: 12px;
+   }
+   .p3{
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.5em;
+    height: 5em; 
+    width: 135px;
+    margin-top: -30px;
+    margin-left: 0px;
+   font-size: 10px;
+   }
+
+   .logo{
+   	width: 100%;
+   }
+
+   .banner{
+   	width: 100%;
+   	margin-left: 30px;
+    margin-top: 25px;
+   }
+
+}
+
+@media screen and (max-width: 425px){
+	.colmd6{
+		padding-right: 0px;
+		padding-left: 0px;
+    }
+
+    .thumb img{
+    	width: 118px;
+    	height: 118px;
+    	margin: 15px 3px;
+	}
+
+	.title1{
+		padding-left: 40px;
+    }
+
+    .title1 h1{
+    	font-size: 20px;
+    	font-weight: 550;
+    }
+
+    .title1 a{
+    }
+
+    .main_download_btn{
+    	margin-left: 3px;
+    	margin-top: 20px;
+    	font-size: 14px;
+
+    }
+
+    .thumbright img{
+    	width: 92px;
+    	height: 92px;
+    	margin-left: 0px;
+    	margin-right: 10px;
+    }
+
+    .p4{
+        text-overflow: ellipsis;
+    	line-height: 1.3em;
+    	height: 2.6em; 
+    	overflow: hidden;
+    	width: 92px;
+    	margin-top: 0px;
+    	margin-left: 0px;
+    	font-size: 15px;
+    	white-space: wrap;
+    }
+    .p5{
+        text-overflow: ellipsis;
+        line-height: 1.3em;
+        height: 2.6em; 
+        overflow: hidden;
+        width: 92px;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 12px;
+        white-space: wrap;
+    }
+
+    
+}
+
+@media screen and (min-width: 425px){
+
+
+}
+
+@media screen and (max-width: 320px){
+	.thumb img{
+    	width: 100px;
+    	height: 100px;
+    	margin: 15px 3px;
+	}
+	.main_download_btn{
+    	margin-left: 3px;
+    	margin-top: 40px;
+    	font-size: 11px;
+
+    }
+
+}
